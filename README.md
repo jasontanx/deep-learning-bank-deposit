@@ -1,4 +1,4 @@
-# deep-learning-bank-deposit: Bank Marketing
+# deep-learning-bank-deposit: Bank Marketing 🏦
 
 Topic: **Development of An Enhanced Deep Learning Model to Predict Client's Intention to Subscribe to the Bank's Term Deposit**
 
@@ -47,6 +47,15 @@ No | Dataset | Information
 # Data Pre-Processing
 ![git_5_dl_pre-process](https://user-images.githubusercontent.com/116934441/216932602-7027758a-9ba6-4247-b911-c63c1e620f30.png)
 
+- Correlation Analysis
+- Label Encoding
+- One Hot Encoding
+  - [Label vs. One-Hot Encoding Short Explaination on Kaggle](https://www.kaggle.com/getting-started/187540)
+- Data Partitioning
+- Class Re-Sampling
+- Data Normalisation
+- Feature Selection
+
 # Modelling
 ## Models Developed
 - 1 Baseline Model
@@ -54,14 +63,29 @@ No | Dataset | Information
 - 2 RNN Model
 - 1 LSTM Model
 
-## Hyperparameters Involved
-- Learning Rate
-- Epoch
-- Dropout
-- Batch Size
+## Proposed Deep Learning Model Flowchart 
+![git_7_ann_flow_dl](https://user-images.githubusercontent.com/116934441/217275836-c7187894-b789-437c-b155-70ea8a8b35bc.png)
 
-## Performance Evaluation
+## Hyperparameters Involved
+- Learning Rate ✅
+- Epoch ✅
+- Dropout ✅
+- Batch Size ✅
+
+# Performance Evaluation
 ![git_6_perform_eval)dl](https://user-images.githubusercontent.com/116934441/216936051-bd8b7058-385c-460f-baaa-5db28bd8267f.png)
+
+## Critical Analysis
+- Among all the models developed, the highest accuracy of 90.29% ✅ was achieved by model 4 
+- Class imbalance issue was resolved with the application of the SMOTE technique
+  - [What is SMOTE technique?](https://towardsdatascience.com/smote-fdce2f605729)
+- Some evaluation metrics carry more weight as compared to others
+- Focus of the retail bank should be on correctly predicting the bank clients that would subscribe to the deposits 
+- Hence, high sensitivity or TPR will be much more important
+  - Banks prefer to correctly predict clients that would most likely purchase their term deposits
+  - Banks stand to lose out more in terms of the sales opportunity if highly potential clients are missed out by the model 
+  - On the other hand, banks could afford to wrongly identifying not interested clients as highly likely to purchase
+
 
 
 
